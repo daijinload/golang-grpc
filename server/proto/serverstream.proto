@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option go_package = "golang-grpc/server/src/infrastructure/grpc/gproto/serverstream";
+
+package serverstream;
+
+import "helloworld.proto";
+
+service ServerStreamTest {
+  rpc SayHello(helloworld.HelloRequest) returns (stream helloworld.HelloReply) {}
+}

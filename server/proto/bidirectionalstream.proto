@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option go_package = "golang-grpc/server/src/infrastructure/grpc/gproto/bidirectionalstream";
+
+package bidirectionalstream;
+
+import "helloworld.proto";
+
+service BidirectionalStreamTest {
+  rpc SayHello(stream helloworld.HelloRequest) returns (stream helloworld.HelloReply) {}
+}
