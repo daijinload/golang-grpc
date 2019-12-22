@@ -16,5 +16,5 @@ func main() {
 
 	log.Print("start")
 
-	mygrpc.Serve("8443", *isTLS)
+	mygrpc.Serve(*port, *isTLS)
 }

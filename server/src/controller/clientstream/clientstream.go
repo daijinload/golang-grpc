@@ -9,7 +9,7 @@ import (
 	"golang-grpc/server/src/infrastructure/grpc/gproto/helloworld"
 )
 
-// ClientStreamService .
+// ClientStreamController .
 type ClientStreamController struct{}
 
 // SayHello .
